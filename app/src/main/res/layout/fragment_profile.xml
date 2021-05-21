@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_height="55dp">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/profile_id"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="ProfileName"
+                android:textSize="20sp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:paddingLeft="25dp"
+            android:text="Account"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:text="Privacy and Security"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:text="Notifications"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:text="Chats"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:id="@+id/logout"
+            android:text="Logout"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

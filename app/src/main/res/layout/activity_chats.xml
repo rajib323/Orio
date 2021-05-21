@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chats">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_layout">
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        app:layout_anchor="@id/bottom_bar"
+        app:fabCustomSize="55dp"
+        android:src="@drawable/ic_baseline_add_24">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="25dp"
+        app:fabCradleRoundedCornerRadius="75dp"
+        app:fabAlignmentMode="end"
+        android:id="@+id/bottom_bar"
+        android:layout_gravity="bottom">
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cnb_iconSize="30dp"
+            app:cnb_radius="28dp"
+            android:id="@+id/chip_bar"
+            android:backgroundTint="@android:color/transparent"
+            app:cnb_menuResource="@menu/menu"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="8dp"
+            app:cnb_unselectedColor="@color/black">
+        </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096040262123",
+    "project_id": "orio-89deb",
+    "storage_bucket": "orio-89deb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096040262123:android:187377252764a82ae111ae",
+        "android_client_info": {
+          "package_name": "com.google.orio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096040262123-ircgrp5s39rmvcsnni8316slj7e3jvt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqH7eDjW7sVYJveHxFY84MuQqtaGrJOp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096040262123-ircgrp5s39rmvcsnni8316slj7e3jvt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

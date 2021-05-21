@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp"
+    tools:context=".newChatActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nw"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="New Chat">
+    </TextView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/nw"
+        android:id="@+id/ptxt"
+        android:hint="Email id"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@color/black">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ptxt">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

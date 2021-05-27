@@ -6,7 +6,7 @@ SignUp options available<br />
 Revamped design<br />
 Passcode lock everytime user logs in<br />
 User Search feature available<br />
-No data uploaded except email id and password and messages<br />
+No data uploaded except email id and pin and messages<br />
 <br />
 <br />
 App download link : <br />

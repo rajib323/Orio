@@ -68,7 +68,7 @@ public class Signup extends AppCompatActivity {
                     String userid = firebaseUser.getUid();
                     Toast.makeText(getApplicationContext(),"SignUp Success",Toast.LENGTH_SHORT).show();
                     reference= FirebaseDatabase.getInstance().getReference("Users").child(userid);
-                    HashMap<String,String> hashMap=new HashMap<>();
+                    HashMap<String,Object> hashMap=new HashMap<>();
                     hashMap.put("id",userid);
                     hashMap.put("username",username.getText().toString());
                     hashMap.put("pin",pin.getText().toString());

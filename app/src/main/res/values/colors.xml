@@ -4,6 +4,8 @@
     <color name="red_500">#FF6666</color>
     <color name="purple_500">#FF5700B3</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="blue">#1E90FF</color>
+    <color name="gray">#FFF8DC</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>

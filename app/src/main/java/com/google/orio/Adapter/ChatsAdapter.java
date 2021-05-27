@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -51,13 +52,21 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatsAdapter.ViewHolder> 
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 User usr=snapshot.getValue(User.class);
                 holder.t.setText(usr.getUsername());
+                if(usr.getStatus().equals("online"))
+                    holder.status.setImageResource(R.color.blue);
+                else if(usr.getStatus().equals("offline"))
+                    holder.status.setImageResource(R.color.gray);
+                if(!usr.getImageURL().equals("default")&&mcon!=null)
+                    Glide.with(mcon).load(usr.getImageURL()).into(holder.rt);
+                else
+                    holder.rt.setImageResource(R.mipmap.ic_launcher_round);
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent=new Intent(mcon, MessageActivity.class);
                         intent.putExtra("userid",user.get(position));
                         intent.putExtra("username",usr.getUsername());
-                        mcon.startActivity(intent);
+                        mcon.startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
                     }
                 });
@@ -79,8 +88,10 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatsAdapter.ViewHolder> 
 
         CircleImageView rt;
         TextView t;
+        CircleImageView status;
         public ViewHolder(View itemView){
             super(itemView);
+            status=itemView.findViewById(R.id.status);
             rt=itemView.findViewById(R.id.profile_image);
             t=itemView.findViewById(R.id.username);
         }

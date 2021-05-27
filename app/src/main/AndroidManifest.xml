@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Orio">
-        <activity android:name=".newChatActivity">
-        </activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".newChatActivity"></activity>
         <activity
             android:name=".MessageActivity"
             android:parentActivityName=".chats"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity android:name=".chats" />
         <activity android:name=".Home" />
         <activity android:name=".Signup" />

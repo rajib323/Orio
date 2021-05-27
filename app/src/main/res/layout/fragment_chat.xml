@@ -40,10 +40,10 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="45dp"
+                android:src="@mipmap/ic_launcher_round"
                 android:layout_height="45dp"
                 android:id="@+id/pfilimg"
-                android:layout_alignParentEnd="true"
-                android:src="@mipmap/ic_launcher_round">
+                android:layout_alignParentEnd="true">
             </de.hdodenhof.circleimageview.CircleImageView>
 
 

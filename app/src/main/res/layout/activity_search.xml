@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    tools:context=".SearchActivity">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ptxt"
+        android:hint="Search"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@color/black">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_viw"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ptxt">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

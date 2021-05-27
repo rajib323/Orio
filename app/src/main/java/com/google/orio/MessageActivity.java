@@ -101,14 +101,17 @@ public class MessageActivity extends AppCompatActivity {
 
         snd.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                DatabaseReference r2=FirebaseDatabase.getInstance().getReference();
-                HashMap<String,Object> hashMap=new HashMap<>();
-                hashMap.put("receiver",receiverId);
-                hashMap.put("sender",usr.getUid());
-                hashMap.put("message",msg.getText().toString());
-                Date cur= Calendar.getInstance().getTime();
-                r2.child("Chats").push().setValue(hashMap);
-                msg.setText("");
+
+                if(!msg.getText().toString().equals("")){
+                    DatabaseReference r2=FirebaseDatabase.getInstance().getReference();
+                    HashMap<String,Object> hashMap=new HashMap<>();
+                    hashMap.put("receiver",receiverId);
+                    hashMap.put("sender",usr.getUid());
+                    hashMap.put("message",msg.getText().toString());
+                    Date cur= Calendar.getInstance().getTime();
+                    r2.child("Chats").push().setValue(hashMap);
+                    msg.setText("");
+                }
             }
         });
 

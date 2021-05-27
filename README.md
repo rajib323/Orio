@@ -1,5 +1,5 @@
 
-![](https://drive.google.com/file/d/1UC0RMGNEDQmZgULnsSYG7SFhw7pqtfIY/view?usp=sharing)
+![](https://github.com/adi323/Orio/blob/main/page01.jpg)
 
 # Orio
 Cloud based chatting system<br />
